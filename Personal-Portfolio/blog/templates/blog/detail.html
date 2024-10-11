@@ -10,4 +10,8 @@
 
 {{ blog.description|safe }}
 
+<div class="text-center mb-5">
+    <a href="{% url 'blog:blog_edit' blog.id %}"><button class="btn btn-primary">Edit Blog</button></a>
+</div>
+
 {% endblock %}

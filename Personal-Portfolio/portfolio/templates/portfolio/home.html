@@ -4,15 +4,9 @@
 {% static 'portfolio/Profile.jpg' %}
 {% block content %}
 
-<div class="flip-card edit">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="{% static 'portfolio/Profile.jpg' %}" class="image-fluid resize" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Naurangi Lal</h1> 
-      <p>❤️ Python Full Stack Developer ❤️</p> 
-    </div>
+<div class="row justify-content-center mb-3">
+  <div class="col-md-3 text-center">
+    <img src="{% static 'portfolio/Profile.jpg' %}" class="img-fluid" alt="Avatar" style="width:300px;height:300px;">
   </div>
 </div>
 <div class="row justify-content-center mb-3">
@@ -22,6 +16,8 @@
 </div>
 
 <h2 class="mt-5">Portfolio</h2>
+<hr>
+<a href="">Add Projects</a>
 <hr>
 <div class="row">
   {% for project in projects %}
